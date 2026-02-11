@@ -1,6 +1,6 @@
 {
   "name": "smart-env-schema",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Type-safe environment variable validation with excellent DX",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
