@@ -1,0 +1,48 @@
+{
+  "name": "smart-env-validator",
+  "version": "0.1.0",
+  "description": "Type-safe environment variable validation with excellent DX",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "smart-env": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node -r ts-node/register --test test/**/*.test.ts"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "dotenv",
+    "validation",
+    "typescript",
+    "zod",
+    "config"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "jiti": "^2.6.1",
+    "prompts": "^2.4.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
