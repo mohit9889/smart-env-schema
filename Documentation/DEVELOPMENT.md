@@ -3,7 +3,7 @@
 ## Project Structure
 
 ```
-smart-env-validator/
+smart-env-schema/
 ├── src/
 │   ├── core/              # Core validation logic
 │   │   ├── types.ts       # TypeScript interfaces
@@ -73,17 +73,17 @@ npm run build
 npm link
 
 # In your test project
-npm link smart-env-validator
+npm link smart-env-schema
 
 # Now you can use it like:
-import { env } from 'smart-env-validator';
+import { env } from 'smart-env-schema';
 ```
 
 ### Method 3: Local install
 
 ```bash
 # In your test project
-npm install /path/to/smart-env-validator
+npm install /path/to/smart-env-schema
 ```
 
 ## Next Steps for V1
@@ -137,7 +137,7 @@ npm install /path/to/smart-env-validator
 
    ```bash
    npm pack
-   # This creates smart-env-validator-0.1.0.tgz
+   # This creates smart-env-schema-0.1.0.tgz
    # Install it in a test project to verify
    ```
 

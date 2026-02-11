@@ -1,4 +1,4 @@
-# 📦 smart-env-validator - Project Summary
+# 📦 smart-env-schema - Project Summary
 
 ## What You Have
 
@@ -51,7 +51,7 @@ A **complete, production-ready NPM package** for type-safe environment variable 
 ### ✅ API
 
 ```typescript
-import { env, defineConfig, z, validateEnv } from "smart-env-validator";
+import { env, defineConfig, z, validateEnv } from "smart-env-schema";
 
 // Define schema
 export default defineConfig({

@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide - smart-env-validator
+# 🚀 Quick Start Guide - smart-env-schema
 
 Your NPM package skeleton is ready! Here's how to get started:
 
@@ -21,7 +21,7 @@ A complete V1.1 package with:
 ### 1. Install Dependencies
 
 ```bash
-cd smart-env-validator
+cd smart-env-schema
 npm install
 ```
 
@@ -82,13 +82,13 @@ Create a new test project:
 mkdir test-project
 cd test-project
 npm init -y
-npm link smart-env-validator  # or: npm install /path/to/smart-env-validator
+npm link smart-env-schema  # or: npm install /path/to/smart-env-schema
 
 # Create env.config.ts
 npx smart-env init
 
 # Use in your code
-echo "import { env } from 'smart-env-validator'; console.log(env.PORT);" > index.js
+echo "import { env } from 'smart-env-schema'; console.log(env.PORT);" > index.js
 node index.js
 ```
 
@@ -112,7 +112,7 @@ node index.js
 1. **Choose a name** (check availability on NPM):
 
    ```bash
-   npm search smart-env-validator
+   npm search smart-env-schema
    ```
 
    If taken, consider alternatives like:
@@ -132,7 +132,7 @@ node index.js
 
    ```bash
    npm pack
-   # This creates smart-env-validator-0.1.0.tgz
+   # This creates smart-env-schema-0.1.0.tgz
    # Install it in a test project to verify everything works
    ```
 
@@ -165,7 +165,7 @@ While the V1 is functional, you might want to:
 ## 📚 File Structure Overview
 
 ```
-smart-env-validator/
+smart-env-schema/
 ├── src/                      # Source code
 │   ├── core/                 # Core logic
 │   │   ├── types.ts         # TypeScript types

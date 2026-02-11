@@ -42,11 +42,11 @@ Ensure your `package.json` has:
 
 ```json
 {
-  "name": "smart-env-validator",
+  "name": "smart-env-schema",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/smart-env-validator.git"
+    "url": "https://github.com/YOUR_USERNAME/smart-env-schema.git"
   },
   "author": "Your Name <your.email@example.com>",
   "license": "MIT"
@@ -131,7 +131,7 @@ After the first publish, use GitHub Actions for subsequent releases.
 After publishing:
 
 1. **Check npm**
-   - Visit https://www.npmjs.com/package/smart-env-validator
+   - Visit https://www.npmjs.com/package/smart-env-schema
    - Verify the version is updated
 
 2. **Test Installation**
@@ -140,7 +140,7 @@ After publishing:
    mkdir test-install
    cd test-install
    npm init -y
-   npm install smart-env-validator
+   npm install smart-env-schema
    npx smart-env --version
    ```
 

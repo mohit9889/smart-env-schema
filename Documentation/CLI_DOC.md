@@ -5,7 +5,7 @@ Complete reference for `smart-env` CLI commands.
 ## Installation
 
 ```bash
-npm install smart-env-validator
+npm install smart-env-schema
 ```
 
 Or use directly with `npx`:
@@ -340,7 +340,7 @@ npx smart-env --version
 All commands read from `env.config.ts` or `env.config.js`:
 
 ```typescript
-import { defineConfig, z } from 'smart-env-validator';
+import { defineConfig, z } from 'smart-env-schema';
 
 export default defineConfig({
   // Required: Zod schema
@@ -454,7 +454,7 @@ Make sure you're using the validated `env` object:
 console.log(process.env.DATABASE_URL);
 
 // ✅ Use the validated env object
-import { env } from 'smart-env-validator';
+import { env } from 'smart-env-schema';
 console.log(env.DATABASE_URL);
 ```
 

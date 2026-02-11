@@ -1,4 +1,4 @@
-# smart-env-validator
+# smart-env-schema
 
 Type-safe environment variable validation with excellent developer experience.
 
@@ -16,7 +16,7 @@ Type-safe environment variable validation with excellent developer experience.
 ## Installation
 
 ```bash
-npm install smart-env-validator
+npm install smart-env-schema
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ npx smart-env init
 This creates `env.config.ts` with an example schema:
 
 ```typescript
-import { defineConfig, z } from "smart-env-validator";
+import { defineConfig, z } from "smart-env-schema";
 
 export default defineConfig({
   schema: {
@@ -52,7 +52,7 @@ DATABASE_URL=postgresql://localhost:5432/mydb
 ### 3. Use in your code
 
 ```typescript
-import { env } from "smart-env-validator";
+import { env } from "smart-env-schema";
 
 // Fully typed and validated!
 console.log(env.DATABASE_URL); // string
@@ -111,7 +111,7 @@ Auto-generates a Markdown table of all environment variables with types, require
 ### Basic Schema
 
 ```typescript
-import { defineConfig, z } from "smart-env-validator";
+import { defineConfig, z } from "smart-env-schema";
 
 export default defineConfig({
   schema: {
@@ -201,7 +201,7 @@ export default defineConfig({
 
 ## Error Messages
 
-Smart-env-validator gives you helpful, actionable error messages:
+Smart-env-schema gives you helpful, actionable error messages:
 
 ```
 ❌ Environment validation failed:
@@ -222,16 +222,16 @@ Smart-env-validator gives you helpful, actionable error messages:
 
 ## Migration from dotenv
 
-1. Install: `npm install smart-env-validator`
+1. Install: `npm install smart-env-schema`
 2. Run: `npx smart-env init`
 3. Define your schema in `env.config.ts`
-4. Replace `require('dotenv').config()` with `import { env } from 'smart-env-validator'`
+4. Replace `require('dotenv').config()` with `import { env } from 'smart-env-schema'`
 
 That's it! No other changes needed.
 
-## Why smart-env-validator?
+## Why smart-env-schema?
 
-| Feature              | dotenv | envalid | t3-env | **smart-env-validator** |
+| Feature              | dotenv | envalid | t3-env | **smart-env-schema** |
 | -------------------- | ------ | ------- | ------ | ----------------------- |
 | Type safety          | ❌     | ❌      | ✅     | ✅                      |
 | Runtime validation   | ❌     | ✅      | ✅     | ✅                      |
@@ -247,7 +247,7 @@ That's it! No other changes needed.
 Define your environment configuration.
 
 ```typescript
-import { defineConfig, z } from 'smart-env-validator';
+import { defineConfig, z } from 'smart-env-schema';
 
 export default defineConfig({
   schema: { /* Zod schema */ },
@@ -264,7 +264,7 @@ export default defineConfig({
 Validated environment object. Auto-loads on first access.
 
 ```typescript
-import { env } from "smart-env-validator";
+import { env } from "smart-env-schema";
 
 console.log(env.DATABASE_URL);
 ```
@@ -274,7 +274,7 @@ console.log(env.DATABASE_URL);
 Manually validate environment (advanced use).
 
 ```typescript
-import { validateEnv } from "smart-env-validator";
+import { validateEnv } from "smart-env-schema";
 
 const result = validateEnv(config, process.env);
 if (!result.success) {
@@ -291,7 +291,7 @@ Type definitions are auto-generated when you use the package. Your IDE will prov
 Works perfectly with JavaScript too! You won't get type checking, but you'll still get runtime validation.
 
 ```javascript
-const { env } = require("smart-env-validator");
+const { env } = require("smart-env-schema");
 
 console.log(env.DATABASE_URL); // Validated at runtime
 ```

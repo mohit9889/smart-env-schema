@@ -1,6 +1,6 @@
 # Example Usage
 
-This directory contains an example project showing how to use smart-env-validator.
+This directory contains an example project showing how to use smart-env-schema.
 
 ## Setup
 

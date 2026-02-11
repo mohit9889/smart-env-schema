@@ -1,6 +1,6 @@
 # Project Phases & Feature Checklist
 
-This document tracks the development phases and feature implementation status for `smart-env-validator`.
+This document tracks the development phases and feature implementation status for `smart-env-schema`.
 
 ## V1: Must-Have (Core MVP)
 

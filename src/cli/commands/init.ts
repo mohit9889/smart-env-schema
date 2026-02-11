@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-const EXAMPLE_CONFIG_TS = `import { defineConfig, z } from 'smart-env-validator';
+const EXAMPLE_CONFIG_TS = `import { defineConfig, z } from 'smart-env-schema';
 
 export default defineConfig({
   schema: {
@@ -30,7 +30,7 @@ export default defineConfig({
 });
 `;
 
-const EXAMPLE_CONFIG_JS = `const { defineConfig, z } = require('smart-env-validator');
+const EXAMPLE_CONFIG_JS = `const { defineConfig, z } = require('smart-env-schema');
 
 module.exports = defineConfig({
   schema: {

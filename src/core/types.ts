@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /**
- * Configuration for smart-env-validator
+ * Configuration for smart-env-schema
  */
 export interface EnvConfig<T extends z.ZodRawShape> {
   /** Zod schema defining environment variables */
